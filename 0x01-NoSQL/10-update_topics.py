@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-update a topic with a certain 
+update a topic with a certain
 name
 """
 
