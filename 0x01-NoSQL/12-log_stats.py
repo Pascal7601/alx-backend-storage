@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+file that emulates nginx
+logs
+"""
 
 from pymongo import MongoClient
 
@@ -15,6 +19,7 @@ def stats(collection):
     for method in methods:
         ncol = collection.count_documents({"method": method})
         print('\tmethod {}: {}'.format(method, ncol))
+
 
 if __name__ == '__main__':
     client = MongoClient('mongodb://127.0.0.1:27017')
